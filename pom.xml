@@ -288,7 +288,7 @@
           </executions>
           <configuration>
               <!-- Specify the format of the report -->
-              <!-- <format>XML</format> -->
+                <format>XML</format>
               <!-- Define where the report should be generated -->
               <outputDirectory>${project.build.directory}/dependency-check-report</outputDirectory>
           </configuration>
