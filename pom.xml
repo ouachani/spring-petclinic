@@ -274,6 +274,26 @@
         <artifactId>cyclonedx-maven-plugin</artifactId>
       </plugin>
 
+      <!-- dependency-check plugin -->
+      <plugin>
+          <groupId>org.owasp</groupId>
+          <artifactId>dependency-check-maven</artifactId>
+          <version>6.5.0</version>
+          <executions>
+              <execution>
+                  <goals>
+                      <goal>check</goal>
+                  </goals>
+              </execution>
+          </executions>
+          <configuration>
+              <!-- Specify the format of the report -->
+              <format>XML</format>
+              <!-- Define where the report should be generated -->
+              <outputDirectory>${project.build.directory}/dependency-check-report</outputDirectory>
+          </configuration>
+       </plugin>
+
     </plugins>
   </build>
 
