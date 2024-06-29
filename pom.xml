@@ -270,9 +270,19 @@
       <!-- Spring Boot Actuator displays sbom-related information if a CycloneDX SBOM file is
       present at the classpath -->
       <plugin>
-        <groupId>org.cyclonedx</groupId>
-        <artifactId>cyclonedx-maven-plugin</artifactId>
+          <groupId>org.cyclonedx</groupId>
+          <artifactId>cyclonedx-maven-plugin</artifactId>
+          <version>2.7.8</version>
+          <executions>
+              <execution>
+                  <id>make-cyclonedx-bom</id>
+                  <goals>
+                      <goal>makeAggregateBom</goal>
+                  </goals>
+              </execution>
+          </executions>
       </plugin>
+
 
       <!-- dependency-check plugin -->
       <plugin>
