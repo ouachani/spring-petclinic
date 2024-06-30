@@ -297,10 +297,10 @@
               </execution>
           </executions>
           <configuration>
-              <!-- Specify the format of the report -->
-                <format>XML</format>
-              <!-- Define where the report should be generated -->
-              <outputDirectory>${project.build.directory}/dependency-check-report</outputDirectory>
+              <dataDirectory>/var/lib/jenkins/dependency-check-nvd</dataDirectory>
+              <autoupdate>false</autoupdate>
+              <cveUrlModified>file:/var/lib/jenkins/dependency-check-nvd/nvdcve-1.1-modified.json.gz</cveUrlModified>
+              <cveUrlBase>file:/var/lib/jenkins/dependency-check-nvd/nvdcve-1.1-%d.json.gz</cveUrlBase>
           </configuration>
        </plugin>
 
