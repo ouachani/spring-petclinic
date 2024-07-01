@@ -289,14 +289,14 @@
           <groupId>org.owasp</groupId>
           <artifactId>dependency-check-maven</artifactId>
           <version>9.0.0</version>
-<!--           <executions>
+          <executions>
               <execution>
                   <goals>
                       <goal>check</goal>
                   </goals>
               </execution>
           </executions>
-          <configuration>
+ <!--         <configuration>
               <dataDirectory>/var/lib/jenkins/dependency-check-nvd</dataDirectory>
               <autoupdate>false</autoupdate>
               <cveUrlModified>file:/var/lib/jenkins/dependency-check-nvd/nvdcve-1.1-modified.json.gz</cveUrlModified>
